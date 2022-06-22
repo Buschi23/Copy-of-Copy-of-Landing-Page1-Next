@@ -68,25 +68,28 @@ const Home = (props) => {
         </div>
         <div className="home-features">
           <div className="home-hero-text">
-            <h1 id="start" className="home-heading">
-              IT-Reparatur Kormann
-              <span
-                dangerouslySetInnerHTML={{
-                  __html: ' ',
-                }}
-              />
+            <h1>
+              <span>IT-Reparatur Kormann</span>
+              <span className="home-text02"></span>
             </h1>
-            <h3 className="home-heading1">
+          </div>
+          <div className="home-hero-text1">
+            <span className="home-text03">
               Du suchst ein kompetenten und Ausgebildenden Fachmann in Thema
               Hard und Software?
-            </h3>
-            <h3 className="home-heading2">
-              <span>Dann bist du hier genau richtig!</span>
-            </h3>
+            </span>
+          </div>
+          <div className="home-hero-text2">
+            <span>Dann bist du hier genau richtig</span>
           </div>
         </div>
         <div className="home-features1">
-          <h1 className="home-text01">Was wird angeboten?</h1>
+          <div className="home-hero-text3">
+            <h1>
+              <span>IT-Reparatur Kormann</span>
+              <span className="home-text07"></span>
+            </h1>
+          </div>
           <div id="angebote" className="home-features2">
             <div className="home-features-card">
               <div className="home-icon-container">
@@ -96,10 +99,10 @@ const Home = (props) => {
                 </svg>
               </div>
               <div className="home-text-container">
-                <span className="home-heading3 card-Heading">
+                <span className="home-heading card-Heading">
                   Handy Reperatur
                 </span>
-                <span className="home-text02">
+                <span className="home-text08">
                   Reparatur von kaputten Samsung und Apple Handy Bildschirmen
                   <span
                     dangerouslySetInnerHTML={{
@@ -118,11 +121,11 @@ const Home = (props) => {
                   </svg>
                 </div>
                 <div className="home-text-container1">
-                  <span className="home-heading4 card-Heading">
+                  <span className="home-heading1 card-Heading">
                     PC-Reperatur
                   </span>
-                  <span className="home-text03">
-                    <span className="home-text04">
+                  <span className="home-text09">
+                    <span className="home-text10">
                       Beheben von Hard- und Softwareproblemen.
                     </span>
                   </span>
@@ -137,8 +140,8 @@ const Home = (props) => {
                 </svg>
               </div>
               <div className="home-text-container2">
-                <span className="home-heading5 card-Heading">Beratung</span>
-                <span className="home-text05">
+                <span className="home-heading2 card-Heading">Beratung</span>
+                <span className="home-text11">
                   Kompetente Beratung zum Thema Hardware und Software, sowie die
                   perfekte Zusammenstellung eines Gaming- oder auch Arbeits-
                   PC&apos;s.
@@ -148,7 +151,7 @@ const Home = (props) => {
           </div>
         </div>
         <div className="home-features3">
-          <h1 className="home-text06">Was würde dich das kosten?</h1>
+          <h1 className="home-text12">Was würde dich das kosten?</h1>
         </div>
         <div className="home-features4">
           <h1 id="team">Unser Team</h1>
@@ -158,8 +161,8 @@ const Home = (props) => {
                 Ausgebildender Fachinformatiker mit viel Erfahrungen in Thema
                 Computer und Handy&apos;s
               </span>
-              <span className="home-text09 section-Text">
-                <span className="home-text10">&amp;#8203;</span>
+              <span className="home-text15 section-Text">
+                <span className="home-text16">&amp;#8203;</span>
               </span>
             </div>
             <div className="home-cards-container">
@@ -184,7 +187,7 @@ const Home = (props) => {
             <h1>Kontaktier uns!</h1>
             <div className="home-content-container">
               <div className="home-form-container">
-                <span className="home-heading6 bigCard-Heading">
+                <span className="home-heading3 bigCard-Heading">
                   Schickt uns eine Nachricht
                 </span>
                 <input
@@ -217,7 +220,7 @@ const Home = (props) => {
             </div>
           </div>
           <div className="home-location-1">
-            <span className="home-heading7">Wiesenttal, Bayern</span>
+            <span className="home-heading4">Wiesenttal, Bayern</span>
             <div className="home-adress">
               <svg viewBox="0 0 1024 1024" className="home-icon15">
                 <path d="M512 0c-176.732 0-320 143.268-320 320 0 320 320 704 320 704s320-384 320-704c0-176.732-143.27-320-320-320zM512 512c-106.040 0-192-85.96-192-192s85.96-192 192-192 192 85.96 192 192-85.96 192-192 192z"></path>
@@ -391,11 +394,11 @@ const Home = (props) => {
           }
           .home-features {
             width: 100%;
-            height: 640px;
+            height: 646px;
             display: flex;
             align-self: center;
             align-items: center;
-            padding-top: 72px;
+            padding-top: 69px;
             padding-left: 1px;
             flex-direction: column;
             padding-bottom: 1px;
@@ -406,48 +409,40 @@ const Home = (props) => {
             );
           }
           .home-hero-text {
-            width: auto;
+            width: 100%;
+            height: 145px;
             display: flex;
             align-items: center;
             flex-direction: column;
-            background-color: #000000;
+            justify-content: center;
           }
-          .home-heading {
-            top: 167px;
-            left: 0px;
-            color: var(--dl-color-gray-black);
-            right: 0px;
-            width: 388px;
-            height: 67px;
-            margin: auto;
-            position: absolute;
-            border-radius: var(--dl-radius-radius-radius4);
+          .home-text02 {
+            color: transparent;
           }
-          .home-heading1 {
-            top: 233px;
-            left: 0px;
-            color: var(--dl-color-gray-black);
-            right: 0px;
-            width: 351px;
-            height: 118px;
-            margin: auto;
-            position: absolute;
-            border-radius: var(--dl-radius-radius-radius4);
+          .home-hero-text1 {
+            width: 100%;
+            height: 119px;
+            display: flex;
+            position: relative;
+            align-self: center;
+            align-items: flex-end;
+            flex-direction: column;
+            justify-content: center;
           }
-          .home-heading2 {
-            top: 387px;
-            left: 0px;
-            color: var(--dl-color-gray-black);
-            right: 0px;
-            width: 324px;
-            height: 84px;
-            margin: auto;
-            position: absolute;
-            border-radius: var(--dl-radius-radius-radius4);
+          .home-text03 {
+            align-self: center;
+          }
+          .home-hero-text2 {
+            width: 100%;
+            height: 158px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
           }
           .home-features1 {
             width: 100%;
-            height: 631px;
+            height: 1444px;
             display: flex;
             align-self: center;
             align-items: center;
@@ -457,14 +452,25 @@ const Home = (props) => {
             justify-content: center;
             background-image: linear-gradient(to top, #89d4ef 0%, #c8e9f9 100%);
           }
+          .home-hero-text3 {
+            width: 100%;
+            height: 257px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+          }
+          .home-text07 {
+            color: transparent;
+          }
           .home-features2 {
             width: 100%;
-            height: 585px;
+            height: 1321px;
             display: flex;
             max-width: var(--dl-size-size-maxcontent);
             align-self: center;
             align-items: center;
-            padding-top: 123px;
+            padding-top: 43px;
             padding-left: var(--dl-space-space-unit);
             flex-direction: column;
             padding-bottom: var(--dl-space-space-halfunit);
@@ -499,10 +505,10 @@ const Home = (props) => {
             align-items: flex-start;
             flex-direction: column;
           }
-          .home-heading3 {
+          .home-heading {
             margin-bottom: var(--dl-space-space-tripleunit);
           }
-          .home-text02 {
+          .home-text08 {
             color: #000000;
             font-size: 20px;
             font-style: normal;
@@ -552,10 +558,10 @@ const Home = (props) => {
             align-items: flex-start;
             flex-direction: column;
           }
-          .home-heading4 {
+          .home-heading1 {
             margin-bottom: var(--dl-space-space-tripleunit);
           }
-          .home-text03 {
+          .home-text09 {
             color: #ffffff;
             font-size: 20px;
             font-style: normal;
@@ -566,7 +572,7 @@ const Home = (props) => {
             text-transform: none;
             text-decoration: none;
           }
-          .home-text04 {
+          .home-text10 {
             color: #000000;
           }
           .home-features-card2 {
@@ -600,10 +606,10 @@ const Home = (props) => {
             align-items: flex-start;
             flex-direction: column;
           }
-          .home-heading5 {
+          .home-heading2 {
             margin-bottom: var(--dl-space-space-tripleunit);
           }
-          .home-text05 {
+          .home-text11 {
             color: #000000;
             font-size: 20px;
             font-style: normal;
@@ -663,11 +669,11 @@ const Home = (props) => {
             padding-right: var(--dl-space-space-tripleunit);
             flex-direction: column;
           }
-          .home-text09 {
+          .home-text15 {
             color: var(--dl-color-gray-700);
             text-align: center;
           }
-          .home-text10 {
+          .home-text16 {
             color: #464545;
           }
           .home-cards-container {
@@ -753,7 +759,7 @@ const Home = (props) => {
             justify-content: center;
             background-color: var(--dl-color-gray-900);
           }
-          .home-heading6 {
+          .home-heading3 {
             margin-bottom: var(--dl-space-space-fourunits);
           }
           .home-name1 {
@@ -815,7 +821,7 @@ const Home = (props) => {
             flex-direction: column;
             justify-content: center;
           }
-          .home-heading7 {
+          .home-heading4 {
             font-size: 24px;
             font-style: normal;
             font-family: Roboto;
@@ -859,20 +865,14 @@ const Home = (props) => {
             .home-hero-text {
               width: 80%;
             }
-            .home-heading {
-              top: 121px;
-              left: 320px;
-              height: 61px;
-              margin-bottom: 0px;
+            .home-hero-text1 {
+              width: 80%;
             }
-            .home-heading1 {
-              top: 219px;
-              left: 327px;
-              height: 126px;
+            .home-hero-text2 {
+              width: 80%;
             }
-            .home-heading2 {
-              top: 358px;
-              left: 336px;
+            .home-hero-text3 {
+              width: 80%;
             }
             .home-cards-container {
               justify-content: center;
@@ -899,10 +899,6 @@ const Home = (props) => {
             }
             .home-features {
               width: 100%;
-            }
-            .home-heading {
-              top: 111px;
-              right: 22px;
             }
             .home-features-card {
               width: 70%;
@@ -942,34 +938,24 @@ const Home = (props) => {
             }
             .home-hero-text {
               width: 100%;
+              position: relative;
             }
-            .home-heading {
-              top: 111px;
-              left: 0px;
-              right: 0px;
-              margin: auto;
+            .home-hero-text1 {
+              width: 100%;
+              position: relative;
             }
-            .home-heading1 {
-              top: 245px;
-              left: 0px;
-              right: 0px;
-              width: 337px;
-              margin: auto;
-            }
-            .home-heading2 {
-              top: 413px;
-              left: 0px;
-              right: 0px;
-              margin: auto;
+            .home-hero-text2 {
+              width: 100%;
+              position: relative;
             }
             .home-features1 {
               height: 929px;
               padding-top: 0px;
               padding-bottom: var(--dl-space-space-fiveunits);
             }
-            .home-text01 {
-              height: 64px;
-              align-self: center;
+            .home-hero-text3 {
+              width: 100%;
+              position: relative;
             }
             .home-features2 {
               height: 724px;
@@ -1003,7 +989,7 @@ const Home = (props) => {
               padding-left: 0px;
               padding-bottom: var(--dl-space-space-fiveunits);
             }
-            .home-text06 {
+            .home-text12 {
               width: 351px;
             }
             .home-features4 {
@@ -1052,7 +1038,7 @@ const Home = (props) => {
               margin-right: 0px;
               padding-bottom: 56px;
             }
-            .home-heading6 {
+            .home-heading3 {
               text-align: center;
             }
             .home-location-1 {
