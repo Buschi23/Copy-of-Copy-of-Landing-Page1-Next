@@ -261,6 +261,8 @@ const Home = (props) => {
             position: sticky;
             box-shadow: 5px 5px 10px 0px #b9b9b9;
             align-items: center;
+            padding-left: 0px;
+            padding-right: 0px;
             flex-direction: column;
             justify-content: center;
             background-color: var(--dl-color-gray-white);
@@ -398,7 +400,8 @@ const Home = (props) => {
             display: flex;
             align-self: center;
             align-items: center;
-            padding-left: 1px;
+            padding-left: 0px;
+            padding-right: 0px;
             flex-direction: column;
             background-image: linear-gradient(
               to bottom,
@@ -442,6 +445,7 @@ const Home = (props) => {
             align-self: center;
             align-items: center;
             padding-left: 0px;
+            padding-right: 0px;
             flex-direction: column;
             padding-bottom: var(--dl-space-space-fiveunits);
             justify-content: center;
@@ -622,7 +626,8 @@ const Home = (props) => {
             align-self: center;
             align-items: center;
             padding-top: 116px;
-            padding-left: var(--dl-space-space-tripleunit);
+            padding-left: 0px;
+            padding-right: 0px;
             flex-direction: column;
             padding-bottom: var(--dl-space-space-fiveunits);
             justify-content: flex-start;
@@ -639,7 +644,8 @@ const Home = (props) => {
             align-self: center;
             align-items: center;
             padding-top: 37px;
-            padding-left: var(--dl-space-space-tripleunit);
+            padding-left: 0px;
+            padding-right: 0px;
             flex-direction: column;
             padding-bottom: 1px;
           }
@@ -712,12 +718,13 @@ const Home = (props) => {
             display: flex;
             align-self: center;
             align-items: center;
-            padding-left: var(--dl-space-space-tripleunit);
+            padding-left: 0px;
+            padding-right: 0px;
             flex-direction: column;
             padding-bottom: var(--dl-space-space-fiveunits);
           }
           .home-get-in-touch {
-            width: 1104px;
+            width: 100%;
             height: 1044px;
             display: flex;
             max-width: var(--dl-size-size-maxcontent);
