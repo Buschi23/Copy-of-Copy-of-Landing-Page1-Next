@@ -68,7 +68,7 @@ const Home = (props) => {
         </div>
         <div className="home-features">
           <div className="home-hero-text">
-            <h1>
+            <h1 className="home-text">
               <span>IT-Reparatur Kormann</span>
               <span className="home-text02"></span>
             </h1>
@@ -80,7 +80,7 @@ const Home = (props) => {
             </span>
           </div>
           <div className="home-hero-text2">
-            <span>Dann bist du hier genau richtig</span>
+            <span className="home-text04">Dann bist du hier genau richtig</span>
           </div>
         </div>
         <div className="home-features1">
@@ -398,10 +398,8 @@ const Home = (props) => {
             display: flex;
             align-self: center;
             align-items: center;
-            padding-top: 69px;
             padding-left: 1px;
             flex-direction: column;
-            padding-bottom: 1px;
             background-image: linear-gradient(
               to bottom,
               #ffffff 20%,
@@ -425,12 +423,9 @@ const Home = (props) => {
             display: flex;
             position: relative;
             align-self: center;
-            align-items: flex-end;
+            align-items: center;
             flex-direction: column;
             justify-content: center;
-          }
-          .home-text03 {
-            align-self: center;
           }
           .home-hero-text2 {
             width: 100%;
@@ -932,21 +927,48 @@ const Home = (props) => {
               padding-right: var(--dl-space-space-doubleunit);
             }
             .home-features {
-              height: 417px;
-              padding-top: var(--dl-space-space-fiveunits);
-              padding-bottom: var(--dl-space-space-fiveunits);
+              height: 100%;
+              align-self: center;
+              align-items: center;
+              padding-top: 0px;
+              padding-bottom: 0px;
+              justify-content: center;
             }
             .home-hero-text {
               width: 100%;
+              height: 30%;
               position: relative;
+              padding-top: var(--dl-space-space-fourunits);
+              padding-bottom: var(--dl-space-space-unit);
+            }
+            .home-text {
+              width: 90%;
+              height: 100%;
+              align-self: center;
             }
             .home-hero-text1 {
               width: 100%;
+              height: 40%;
               position: relative;
+              align-items: center;
+              padding-top: var(--dl-space-space-fourunits);
+              padding-bottom: var(--dl-space-space-fourunits);
+              justify-content: center;
+            }
+            .home-text03 {
+              width: 80%;
+              height: 100%;
+              align-self: center;
             }
             .home-hero-text2 {
               width: 100%;
+              height: 30%;
               position: relative;
+              padding-top: var(--dl-space-space-fourunits);
+              padding-bottom: var(--dl-space-space-fourunits);
+            }
+            .home-text04 {
+              height: 100%;
             }
             .home-features1 {
               height: 929px;
