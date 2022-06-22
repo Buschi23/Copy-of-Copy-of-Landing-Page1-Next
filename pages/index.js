@@ -154,7 +154,9 @@ const Home = (props) => {
           <h1 className="home-text12">Was würde dich das kosten?</h1>
         </div>
         <div className="home-features4">
-          <h1 id="team">Unser Team</h1>
+          <h1 id="team" className="home-text13">
+            Unser Team
+          </h1>
           <div className="home-team">
             <div className="home-heading-container">
               <span>
@@ -890,6 +892,9 @@ const Home = (props) => {
             }
           }
           @media (max-width: 767px) {
+            .home-navbar {
+              padding-right: var(--dl-space-space-unit);
+            }
             .home-burger-menu {
               display: flex;
               padding: var(--dl-space-space-halfunit);
@@ -930,7 +935,10 @@ const Home = (props) => {
               margin-bottom: var(--dl-space-space-fourunits);
             }
           }
-          @media (max-width: 479px) {
+          @media (max-width: 480px) {
+            .home-navbar {
+              width: 100%;
+            }
             .home-cta-btn {
               font-size: 16px;
               padding-left: var(--dl-space-space-doubleunit);
@@ -990,6 +998,7 @@ const Home = (props) => {
               position: relative;
             }
             .home-features2 {
+              width: 100%;
               height: 724px;
               padding-top: 98px;
               padding-left: 0px;
@@ -1033,7 +1042,11 @@ const Home = (props) => {
               padding-left: 0px;
               padding-bottom: var(--dl-space-space-fiveunits);
             }
+            .home-text13 {
+              width: 100%;
+            }
             .home-team {
+              width: 100%;
               padding-top: var(--dl-space-space-fiveunits);
               padding-left: 0px;
               padding-right: 0px;

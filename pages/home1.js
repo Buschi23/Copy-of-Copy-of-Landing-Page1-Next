@@ -935,7 +935,7 @@ const Home1 = (props) => {
               margin-bottom: var(--dl-space-space-fourunits);
             }
           }
-          @media (max-width: 479px) {
+          @media (max-width: 480px) {
             .home1-cta-btn {
               font-size: 16px;
               padding-left: var(--dl-space-space-doubleunit);
