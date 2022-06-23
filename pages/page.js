@@ -5,7 +5,7 @@ const Page = (props) => {
   return (
     <>
       <script>
-      if (screen.width <= 700) {
+      if (screen.width < 700) {
           document.location = "index.js";
        }
       </script>
