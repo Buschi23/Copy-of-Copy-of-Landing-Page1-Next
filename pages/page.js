@@ -4,7 +4,12 @@ import Head from 'next/head'
 const Page = (props) => {
   return (
     <>
-      <link rel="canonical" href="https://reparaturservice-kormann.de/index">
+      <script>
+      if (screen.width <= 700) {
+          document.location = "index.js";
+       }
+      </script>
+      
       
       <div className="page-container">
         <Head>
