@@ -5,7 +5,7 @@ const Home = (props) => {
   return (
     <>
       <link rel="alternate" media="only screen and (max-width: 640px)"
-      href="https://reparaturservice-kormann.de/page">
+      href="https://reparaturservice-kormann.de/page"></link>
     
       <div className="home-container">
         <Head>
