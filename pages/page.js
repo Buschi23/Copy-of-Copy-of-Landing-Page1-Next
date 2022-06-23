@@ -4,22 +4,19 @@ import Head from 'next/head'
 const Page = (props) => {
   return (
     <>
-      <script>
-      if (screen.width < 700) {
-          document.location = "index.js";
-       }
-      </script>
+     
       
       
       <div className="page-container">
         <Head>
+          <script type="text/javascript" src="/static/switch.js></script>
           <title>Page - Copy of Copy of Landing Page1</title>
           <meta
             property="og:title"
             content="Page - Copy of Copy of Landing Page1"
           />
         </Head>
-      </div></link>
+      </div>
       <style jsx>
         {`
           .page-container {
