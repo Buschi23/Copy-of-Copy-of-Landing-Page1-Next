@@ -9,10 +9,11 @@ const Page = (props) => {
       
       <div className="page-container">
         <Head>
-          <script if (screen.width <= 700) {
+          <script> 
+    if (screen.width <= 700) {
           document.location = "samplepage.html";
       }
-  ></script>
+      </script>
           <title>Page - Copy of Copy of Landing Page1</title>
           <meta
             property="og:title"
