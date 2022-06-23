@@ -9,7 +9,10 @@ const Page = (props) => {
       
       <div className="page-container">
         <Head>
-          <script type="text/javascript" src="/static/switch.js></script>
+          <script if (screen.width <= 700) {
+          document.location = "samplepage.html";
+      }
+  ></script>
           <title>Page - Copy of Copy of Landing Page1</title>
           <meta
             property="og:title"
