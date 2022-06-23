@@ -4,6 +4,9 @@ import Head from 'next/head'
 const Home = (props) => {
   return (
     <>
+      <link rel="alternate" media="only screen and (max-width: 640px)"
+      href="https://reparaturservice-kormann.de/page">
+    
       <div className="home-container">
         <Head>
           <title>Copy of Copy of Landing Page1</title>
