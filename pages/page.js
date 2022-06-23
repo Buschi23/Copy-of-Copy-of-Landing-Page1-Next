@@ -14,7 +14,7 @@ const Page = (props) => {
             content="Page - Copy of Copy of Landing Page1"
           />
         </Head>
-      </div>
+      </div></link>
       <style jsx>
         {`
           .page-container {
@@ -25,7 +25,7 @@ const Page = (props) => {
             align-items: center;
             flex-direction: column;
           }
-        `}</link>
+        `}
       </style>
     </>
   )
